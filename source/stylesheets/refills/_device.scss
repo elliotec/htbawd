@@ -10,9 +10,7 @@
   $device-backside-background: darken($device-background, 10%);
   $device-text-color: white;
   $device-background-top: #2c3e50;
-  /*$device-background-top: #16a085;*/
-  $device-screen-image: 'https:
-//raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg';
+  $device-screen-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg';
 
   @include background(no-repeat $device-background-top scroll);
   background-repeat: no-repeat;
