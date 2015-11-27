@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
-gem "middleman", "~>3.4.0"
-gem "middleman-livereload", "~> 3.1.0"
-gem "middleman-minify-html"
+gem 'middleman', '~>3.4.0'
+gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman-minify-html'
+gem 'bitters'
+gem 'bourbon'
+gem 'neat'
