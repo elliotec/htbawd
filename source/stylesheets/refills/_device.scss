@@ -10,12 +10,12 @@
   $device-backside-background: darken($device-background, 10%);
   $device-text-color: white;
   $device-background-top: #2c3e50;
-  $device-screen-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg';
 
+  @include clearfix;
   @include background(no-repeat $device-background-top scroll);
+
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 20em;
   width: 100%;
 
   .device-text {
@@ -74,11 +74,21 @@
 
       .screen {
         @include size($device-screen-width $device-screen-height);
-        /*background-image: url($device-screen-image);*/
+        background: $green;
         background-size: cover;
         border-radius: 0.2em;
         box-shadow: inset 0 1px 8px transparentize(black, 0.5);
         margin: auto;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+
+        h1 {
+          font-size: 2.5em;
+        }
+        .author {
+          margin-top: 9em;
+        }
       }
     }
   }
